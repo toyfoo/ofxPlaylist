@@ -269,6 +269,8 @@ public:
 	bool getIdle() {return anim_idle; };
 	int  getDuration() {return duration; }; //< note this is most certainly wrong if not all keyframes are frame-based.
 	
+	bool doNext(); 
+	
 	// -----------------------------------------------------------------------------
 	// MARK: Private methods
 private:
@@ -285,7 +287,7 @@ private:
 	bool isAttached;
 	bool bShouldClear;
 		
-	bool doNext();    
+   
 	void flush();
 	
 };
